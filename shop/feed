@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>-</title>
+	<atom:link href="https://thedietdiary.in/shop/feed/" rel="self" type="application/rss+xml" />
+	<link>https://thedietdiary.in/shop/</link>
+	<description></description>
+	<lastBuildDate>Sat, 10 Aug 2024 12:35:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.1</generator>
+
+<image>
+	<url>https://thedietdiary.in/wp-content/uploads/2024/10/cropped-SP-32x32.png</url>
+	<title>-</title>
+	<link>https://thedietdiary.in/shop/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Family Counselling</title>
+		<link>https://thedietdiary.in/product/family-counselling/</link>
+					<comments>https://thedietdiary.in/product/family-counselling/#respond</comments>
+		
+		<dc:creator><![CDATA[geromantex]]></dc:creator>
+		<pubDate>Sat, 10 Aug 2024 12:32:42 +0000</pubDate>
+				<guid isPermaLink="false">https://shivangipancholi.com/?post_type=product&#038;p=1200</guid>
+
+					<description><![CDATA[<p>The post <a href="https://thedietdiary.in/product/family-counselling/">Family Counselling</a> appeared first on <a href="https://thedietdiary.in"></a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://thedietdiary.in/product/family-counselling/">Family Counselling</a> appeared first on <a href="https://thedietdiary.in"></a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://thedietdiary.in/product/family-counselling/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Food sensitivities</title>
+		<link>https://thedietdiary.in/product/food-sensitivities/</link>
+					<comments>https://thedietdiary.in/product/food-sensitivities/#respond</comments>
+		
+		<dc:creator><![CDATA[geromantex]]></dc:creator>
+		<pubDate>Sat, 10 Aug 2024 12:29:54 +0000</pubDate>
+				<guid isPermaLink="false">https://shivangipancholi.com/?post_type=product&#038;p=1198</guid>
+
+					<description><![CDATA[<p>The post <a href="https://thedietdiary.in/product/food-sensitivities/">Food sensitivities</a> appeared first on <a href="https://thedietdiary.in"></a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://thedietdiary.in/product/food-sensitivities/">Food sensitivities</a> appeared first on <a href="https://thedietdiary.in"></a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://thedietdiary.in/product/food-sensitivities/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Personal Counselling</title>
+		<link>https://thedietdiary.in/product/personal-counselling/</link>
+					<comments>https://thedietdiary.in/product/personal-counselling/#respond</comments>
+		
+		<dc:creator><![CDATA[geromantex]]></dc:creator>
+		<pubDate>Sat, 10 Aug 2024 10:52:15 +0000</pubDate>
+				<guid isPermaLink="false">https://shivangipancholi.com/?post_type=product&#038;p=1162</guid>
+
+					<description><![CDATA[<p>The post <a href="https://thedietdiary.in/product/personal-counselling/">Personal Counselling</a> appeared first on <a href="https://thedietdiary.in"></a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>The post <a href="https://thedietdiary.in/product/personal-counselling/">Personal Counselling</a> appeared first on <a href="https://thedietdiary.in"></a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://thedietdiary.in/product/personal-counselling/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

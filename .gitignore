@@ -1,0 +1,6 @@
+# Git ignore file for static site export
+.private/
+.well-known/
+__pycache__/
+*.pyc
+*.bk
