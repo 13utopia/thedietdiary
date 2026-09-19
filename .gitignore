@@ -1,4 +1,14 @@
-# Git ignore file for static site export
+# Dependencies
+/node_modules
+/.pnpm
+/.yarn
+
+# Next.js build output
+/.next/
+/out/
+
+# Environment and temp files
+.env*.local
 .private/
 .well-known/
 __pycache__/

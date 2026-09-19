@@ -1,0 +1,28 @@
+{
+  "name": "thedietdiary",
+  "version": "1.0.0",
+  "description": "Shivangi Pancholi - Expert Nutritionist & Dietitian Next.js Web Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13utopia/thedietdiary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/13utopia/thedietdiary/issues"
+  },
+  "homepage": "https://github.com/13utopia/thedietdiary#readme",
+  "dependencies": {
+    "next": "^16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

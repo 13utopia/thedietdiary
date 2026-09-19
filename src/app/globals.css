@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-dark: #1b4031;
+  --primary-brand: #30624e;
+  --accent-green: #46896c;
+  --light-sage: #e8f0ec;
+  --cream-bg: #fbf9f4;
+  --warm-card: #ffffff;
+  --text-primary: #1c3c2e;
+  --text-muted: #4e6b5d;
+  --gold-accent: #d4a373;
+  --shadow-sm: 0 4px 6px -1px rgba(27, 64, 49, 0.05);
+  --shadow-md: 0 10px 25px -5px rgba(27, 64, 49, 0.10);
+  --shadow-lg: 0 20px 35px -10px rgba(27, 64, 49, 0.15);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--cream-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Glassmorphism & Utility Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(70, 137, 108, 0.12);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Primary Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-green) 100%);
+  color: #ffffff !important;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(27, 64, 49, 0.25);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(27, 64, 49, 0.35);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--primary-dark) !important;
+  padding: 13px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid var(--accent-green);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--light-sage);
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Spacing */
+.section {
+  padding: 80px 0;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--light-sage);
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+/* Hero Section */
+.hero-wrapper {
+  position: relative;
+  background: radial-gradient(circle at 80% 20%, rgba(70, 137, 108, 0.12) 0%, transparent 60%),
+              linear-gradient(180deg, #f3efe6 0%, var(--cream-bg) 100%);
+  padding: 100px 0 80px;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forward;
+}
