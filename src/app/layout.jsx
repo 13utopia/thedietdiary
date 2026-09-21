@@ -1,6 +1,7 @@
 import './globals.css';
 import Script from 'next/script';
 import SkipLink from '../components/SkipLink';
+import ThemeManager from '../components/ThemeManager';
 
 export const metadataBase = new URL('https://thedietdiary.in');
 
@@ -27,7 +28,26 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  icons: {
+    icon: [
+      { url: '/website-images/cropped-SP-32x32.webp', sizes: '32x32', type: 'image/webp' },
+      { url: '/website-images/cropped-SP-192x192.webp', sizes: '192x192', type: 'image/webp' },
+    ],
+    apple: [
+      { url: '/website-images/cropped-SP-180x180.webp', sizes: '180x180', type: 'image/webp' },
+    ],
+  },
 };
+
+const GLOBAL_CONFIG_SCRIPT = `
+  window.astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"1","is_scroll_to_top":"1","is_header_footer_builder_active":"1","responsive_cart_click":"flyout","is_dark_palette":""};
+  window.fluentformElementor = {"adminUrl":"/wp-admin/admin.php"};
+  window.sp_real_localize_data = {"ajaxUrl":"/wp-admin/admin-ajax.php","nonce":"d942fc9233"};
+  window.localize = {"ajaxurl":"/wp-admin/admin-ajax.php","nonce":"31708be620","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https://thedietdiary.in/","cart_redirectition":"no","cart_page_url":"https://thedietdiary.in","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+  window.EAELImageMaskingConfig = {"svg_dir_url":"/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/"};
+  window.elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_variables":true},"urls":{"assets":"/wp-content/plugins/elementor/assets/","ajaxurl":"/wp-admin/admin-ajax.php","uploadUrl":"/wp-content/uploads"},"nonces":{"floatingButtonsClickTracking":"a08d4df1bb","atomicFormsSendForm":"03482538f9"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":721,"title":"Shivangi%20Pancholi%20%7C%20Expert%20Nutritionist%20%26%20Dietitian%20for%20a%20Healthier%20You","excerpt":"","featuredImage":false}};
+  window.ElementorProFrontendConfig = {"ajaxurl":"/wp-admin/admin-ajax.php","nonce":"b22528e147","urls":{"assets":"/wp-content/plugins/elementor-pro/assets/","rest":"/wp-json/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"https://thedietdiary.in","checkout_page_url":"https://thedietdiary.in","fragments_nonce":"2e2baee350"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"/wp-content/plugins/elementor-pro/modules/lottie/assets/animations/default.json"}};
+`;
 
 export default function RootLayout({ children }) {
   return (
@@ -103,46 +123,40 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/wp-content/uploads/essential-addons-elementor/eael-1015.css" />
         <link rel="stylesheet" href="/wp-content/uploads/essential-addons-elementor/eael-721.css" />
         <link rel="stylesheet" href="/wp-includes/css/dist/block-library/style.min.css" />
+        <script dangerouslySetInnerHTML={{ __html: GLOBAL_CONFIG_SCRIPT }} />
       </head>
-      <body>
+      <body className="home wp-singular page-template-default page page-id-721 wp-custom-logo wp-embed-responsive wp-theme-astra theme-astra woocommerce-no-js ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.12 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-14 elementor-page elementor-page-721">
+        <ThemeManager />
         <SkipLink />
         <main id="main-content">{children}</main>
-        <Script src="/wp-includes/js/jquery/jquery.min.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/jquery/jquery-migrate.min.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/underscore.min.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/dist/hooks.min.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/dist/i18n.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor/assets/js/frontend.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/themes/astra/assets/js/minified/frontend.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/header-footer-elementor/inc/js/frontend.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/testimonial-free/src/Blocks/assets/js/script.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/testimonial-free/src/Frontend/assets/js/swiper.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js" strategy="lazyOnload" />
-        <Script src="/wp-content/uploads/essential-addons-elementor/eael-1015.js" strategy="lazyOnload" />
-        <Script src="/wp-content/uploads/essential-addons-elementor/eael-721.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/comment-reply.min.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/jquery/ui/core.min.js" strategy="lazyOnload" />
-        <Script src="/wp-includes/js/wp-util.min.js" strategy="lazyOnload" />
+        
+        {/* Core Scripts */}
+        <Script src="/wp-includes/js/jquery/jquery.min.js" strategy="afterInteractive" />
+        <Script src="/wp-includes/js/jquery/jquery-migrate.min.js" strategy="afterInteractive" />
+        <Script src="/wp-includes/js/underscore.min.js" strategy="afterInteractive" />
+        <Script src="/wp-includes/js/dist/hooks.min.js" strategy="afterInteractive" />
+        <Script src="/wp-includes/js/dist/i18n.min.js" strategy="afterInteractive" />
+        
+        {/* Elementor Core & Motion FX */}
+        <Script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/elementor/assets/js/frontend.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" strategy="afterInteractive" />
+        
+        {/* Astra & Plugins */}
+        <Script src="/wp-content/themes/astra/assets/js/minified/frontend.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/header-footer-elementor/inc/js/frontend.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/testimonial-free/src/Blocks/assets/js/script.js" strategy="afterInteractive" />
+        <Script src="/wp-content/plugins/testimonial-free/src/Frontend/assets/js/swiper.min.js" strategy="afterInteractive" />
+        <Script src="/wp-content/uploads/essential-addons-elementor/eael-721.js" strategy="afterInteractive" />
+        <Script src="/wp-content/uploads/essential-addons-elementor/eael-1015.js" strategy="afterInteractive" />
+        <Script src="/wp-includes/js/jquery/ui/core.min.js" strategy="afterInteractive" />
+        <Script src="/wp-includes/js/wp-util.min.js" strategy="afterInteractive" />
       </body>
     </html>
   );

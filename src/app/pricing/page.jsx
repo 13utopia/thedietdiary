@@ -52,7 +52,7 @@ class="hfeed site" id="page">
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-474656a4 elementor-widget elementor-widget-image" data-id="474656a4" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-																<a href="/website-images/Asset-10.webp" class="attachment-full size-full wp-image-2231" alt="" srcset="/website-images/Asset-10.webp 417w, /website-images/Asset-10-280x300.webp 280w" sizes="(max-width: 417px) 100vw, 417px" />								</a>
+																<a href="/"><img fetchpriority="high" width="417" height="447" src="/website-images/Asset-10.webp" class="attachment-full size-full wp-image-2231" alt="The Diet Diary Logo" srcset="/website-images/Asset-10.webp 417w, /website-images/Asset-10-280x300.webp 280w" sizes="(max-width: 417px) 100vw, 417px" /></a>								</a>
 															</div>
 				</div>
 					</div>

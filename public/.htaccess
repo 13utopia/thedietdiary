@@ -9,6 +9,8 @@
   RewriteCond %{HTTP_HOST} ^(?:www\.)?thedietdiary\.in$ [NC]
   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
+  # Redirect non-www to www or keep as is (optional)
+  
   # Serve existing files and directories directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
