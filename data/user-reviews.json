@@ -1,0 +1,28 @@
+[
+  {
+    "id": "user-1001",
+    "name": "Riya M.",
+    "role": "Homemaker, Surat",
+    "rating": 5,
+    "result": "Felt lighter in 6 weeks",
+    "duration": "Client review",
+    "hasFace": false,
+    "image": "/website-images/Peach-Salad-in-Bowl.webp",
+    "quote": "The meal plan was easy to follow with regular Indian food — no boiled food, no fancy ingredients. My energy after lunch is finally steady again.",
+    "createdAt": "2026-09-20T10:00:00.000Z",
+    "source": "website"
+  },
+  {
+    "id": "user-1002",
+    "name": "Karan D.",
+    "role": "Software Engineer, Ahmedabad",
+    "rating": 5,
+    "result": "Better energy & digestion",
+    "duration": "Client review",
+    "hasFace": false,
+    "image": "/website-images/Healthy-Green-Juice-Pepper-Delight.webp",
+    "quote": "WhatsApp check-ins kept me consistent even on long office days. Digestion settled within weeks and I stopped relying on evening coffee.",
+    "createdAt": "2026-09-22T14:30:00.000Z",
+    "source": "website"
+  }
+]

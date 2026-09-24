@@ -145,12 +145,394 @@ a:hover {
   overflow: hidden;
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Elementor entrance animation base (matches Elementor frontend) */
+.animated {
+  animation-duration: 1.25s;
+  animation-fill-mode: both;
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.8s ease forward;
+.elementor-invisible {
+  visibility: hidden;
 }
+
+/* Motion FX parents need a positioning context for absolute layers */
+.elementor-motion-effects-element-type-background {
+  position: relative;
+  --e-transform-origin-x: center;
+  --e-transform-origin-y: center;
+  overflow: hidden;
+}
+
+/* Parallax layer needs extra height so translateY does not show gaps */
+.elementor-motion-effects-container > .elementor-motion-effects-layer {
+  width: 100%;
+  height: 130%;
+  top: -15%;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Pending state for enhancement sections (Elementor-like fadeInUp) */
+.dd-anim-pending {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+}
+
+/* Shared enhancement band — sit flush with Elementor page flow */
+#diet-diary-home-enhancements {
+  width: 100%;
+  background: #ffffff;
+}
+
+.diet-diary-enhancements {
+  width: 100%;
+}
+
+/* Match Elementor homepage section backgrounds */
+.diet-diary-enhancements .dd-e-sage {
+  background-color: #c9d8bf;
+  padding: 48px 20px;
+}
+
+.diet-diary-enhancements .dd-e-white {
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+
+.diet-diary-enhancements .dd-e-cta {
+  padding: 70px 20px;
+}
+
+.diet-diary-enhancements .dd-e-title-green {
+  font-family: 'Italiana', Sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  color: #30624e !important;
+  line-height: 1.25em !important;
+}
+
+.diet-diary-enhancements .dd-e-title-dark {
+  font-family: 'Italiana', Sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 400 !important;
+  color: #1b4031 !important;
+  line-height: 1.25em !important;
+}
+
+.diet-diary-enhancements .dd-e-stat-num {
+  font-family: 'Italiana', Sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  color: #1b4031 !important;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.diet-diary-enhancements .dd-e-stat-label {
+  font-family: 'Poppins', Sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: #3c3c3c !important;
+  text-align: center;
+  margin: 8px 0 0 !important;
+  line-height: 1.5;
+}
+
+.diet-diary-enhancements .dd-e-copy-pad {
+  padding: 40px 40px 40px 30px;
+}
+
+@media (max-width: 900px) {
+  .diet-diary-enhancements .dd-e-white {
+    padding: 48px 0;
+  }
+
+  .diet-diary-enhancements .dd-e-sage,
+  .diet-diary-enhancements .dd-e-cta {
+    padding: 48px 16px;
+  }
+
+  .diet-diary-enhancements .dd-e-copy-pad {
+    padding: 24px 20px 32px;
+  }
+
+  .diet-diary-enhancements .elementor-section .elementor-container {
+    flex-wrap: wrap;
+  }
+
+  .diet-diary-enhancements .elementor-col-50 {
+    width: 100%;
+  }
+
+  .diet-diary-enhancements .dd-e-title-green,
+  .diet-diary-enhancements .dd-e-title-dark {
+    font-size: 28px !important;
+  }
+}
+
+.diet-diary-enhancements .elementor-widget-text-editor p {
+  font-family: 'Poppins', Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #7a7a7a;
+}
+
+.diet-diary-enhancements .dd-e-sage .elementor-widget-text-editor p {
+  color: #3c3c3c;
+}
+
+.diet-diary-enhancements .elementor-button {
+  background-color: #30624e !important;
+  color: #ffffff !important;
+  font-family: 'Poppins', Sans-serif !important;
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+  fill: #ffffff;
+  border: none;
+}
+
+.diet-diary-enhancements .elementor-button:hover {
+  background-color: #45896c !important;
+}
+
+.diet-diary-enhancements .dd-e-contact-line {
+  margin-top: 18px !important;
+}
+
+.diet-diary-enhancements .dd-e-contact-line a {
+  color: #1b4031;
+  text-decoration: none;
+  font-family: 'Poppins', Sans-serif;
+  font-weight: 500;
+}
+
+.diet-diary-enhancements .dd-e-contact-line a:hover {
+  color: #30624e;
+}
+
+.diet-diary-enhancements .dd-e-review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+  gap: 0;
+}
+
+.diet-diary-enhancements .dd-e-review-col {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.diet-diary-enhancements .dd-e-review-name {
+  font-family: 'Italiana', Sans-serif !important;
+  font-size: 26px !important;
+  font-weight: 600 !important;
+  color: #222222 !important;
+  margin: 16px 0 8px !important;
+}
+
+.diet-diary-enhancements .dd-e-img-portrait,
+.diet-diary-enhancements .dd-e-img-wide {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.diet-diary-enhancements .dd-e-img-portrait {
+  aspect-ratio: 4 / 5;
+  max-height: 420px;
+}
+
+.diet-diary-enhancements .dd-e-img-wide {
+  aspect-ratio: 4 / 3;
+  max-height: 300px;
+}
+
+/* Leave a Review form — clean grid, no Elementor column fights */
+.dd-review-form-section {
+  background: #c9d8bf;
+  padding: 64px 20px;
+}
+
+.dd-review-form {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.dd-review-form__title {
+  margin: 0 0 28px;
+  text-align: center;
+  font-family: 'Italiana', serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #1b4031;
+  line-height: 1.2;
+}
+
+.dd-review-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.dd-review-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.dd-review-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1b4031;
+}
+
+.dd-review-form__field input,
+.dd-review-form__field textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 14px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+  background: #ffffff;
+  border: 1px solid rgba(27, 64, 49, 0.2);
+  border-radius: 0;
+  appearance: none;
+}
+
+.dd-review-form__field input:focus,
+.dd-review-form__field textarea:focus {
+  outline: none;
+  border-color: #30624e;
+}
+
+.dd-review-form__field input::placeholder,
+.dd-review-form__field textarea::placeholder {
+  color: #979797;
+}
+
+.dd-review-form__field textarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.dd-review-form__stars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.dd-review-form__stars button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+  color: rgba(27, 64, 49, 0.28);
+  transition: color 0.15s ease;
+}
+
+.dd-review-form__stars button.is-on {
+  color: #30624e;
+}
+
+.dd-review-form__status {
+  margin: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.dd-review-form__status.is-success {
+  color: #1b4031;
+}
+
+.dd-review-form__status.is-error {
+  color: #8a3b3b;
+}
+
+.dd-review-form__submit {
+  display: block;
+  width: fit-content;
+  margin: 6px auto 0;
+  padding: 14px 36px;
+  background: #30624e;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dd-review-form__submit:hover {
+  background: #45896c;
+}
+
+.dd-review-form__submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+@media (max-width: 767px) {
+  .diet-diary-enhancements .dd-e-review-col {
+    width: 100%;
+  }
+
+  .dd-review-form-section {
+    padding: 48px 16px;
+  }
+
+  .dd-review-form {
+    max-width: 100%;
+  }
+
+  .dd-review-form__row {
+    grid-template-columns: 1fr;
+  }
+
+  .dd-review-form__title {
+    font-size: 28px;
+  }
+
+  .diet-diary-enhancements .dd-e-copy-pad {
+    padding: 28px 20px;
+  }
+
+  .diet-diary-enhancements .dd-e-title-green,
+  .diet-diary-enhancements .dd-e-title-dark {
+    font-size: 28px !important;
+  }
+
+  .diet-diary-enhancements .elementor-col-25 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .diet-diary-enhancements .elementor-col-25 {
+    width: 100%;
+  }
+}
+

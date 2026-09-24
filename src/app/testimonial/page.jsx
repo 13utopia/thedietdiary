@@ -251,7 +251,7 @@ class="hfeed site" id="page">
 				<div class="elementor-widget-container">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-											<a href="https://thedietdiary.in">
+											<a href="">
 
 											<span class="elementor-icon-list-text">Home </span>
 											</a>
@@ -293,7 +293,7 @@ class="hfeed site" id="page">
 				</div>
 				</div>
 		
-<div class="joinchat joinchat--right" data-settings='{"telephone":"918469077410","mobile_only":false,"button_delay":3,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":-10,"message_badge":false,"message_send":"Hi ! I would like to know about your diet plans.","tracking_url":"https://thedietdiary.in/wp-json/joinchat/v1/track-click","message_hash":"11fcfb50"}' hidden aria-hidden="false">
+<div class="joinchat joinchat--right" data-settings='{"telephone":"918469077410","mobile_only":false,"button_delay":3,"whatsapp_web":false,"qr":false,"message_views":2,"message_delay":-10,"message_badge":false,"message_send":"Hi ! I would like to know about your diet plans.","tracking_url":"/wp-json/joinchat/v1/track-click","message_hash":"11fcfb50"}' hidden aria-hidden="false">
 	<div class="joinchat__button" role="button" tabindex="0" aria-label="💬 Need help? Open Chat">
 									<div class="joinchat__tooltip" aria-hidden="true"><div>💬 Need help?</div></div>
 			</div>
@@ -409,90 +409,90 @@ class="hfeed site" id="page">
 var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"1","is_scroll_to_top":"1","is_header_footer_builder_active":"1","responsive_cart_click":"flyout","is_dark_palette":""};
 //# sourceURL=astra-theme-js-js-extra
 </script>
-<script id="astra-theme-js-js" src="https://thedietdiary.in/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.13.12"></script>
+<script id="astra-theme-js-js" src="/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.13.12"></script>
 <script id="fluentform-elementor-js-extra">
-var fluentformElementor = {"adminUrl":"https://thedietdiary.in/wp-admin/admin.php"};
+var fluentformElementor = {"adminUrl":"/wp-admin/admin.php"};
 //# sourceURL=fluentform-elementor-js-extra
 </script>
-<script id="fluentform-elementor-js" src="https://thedietdiary.in/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.14"></script>
-<script id="sp-real-swiper-js" src="https://thedietdiary.in/wp-content/plugins/testimonial-free/src/Frontend/assets/js/swiper.min.js?ver=4.0.0"></script>
+<script id="fluentform-elementor-js" src="/wp-content/plugins/fluentform/assets/js/fluent-forms-elementor-widget.js?ver=6.2.14"></script>
+<script id="sp-real-swiper-js" src="/wp-content/plugins/testimonial-free/src/Frontend/assets/js/swiper.min.js?ver=4.0.0"></script>
 <script id="sp-real-blocks-frontend-js-extra">
-var sp_real_localize_data = {"ajaxUrl":"https://thedietdiary.in/wp-admin/admin-ajax.php","nonce":"4e8371e942"};
+var sp_real_localize_data = {"ajaxUrl":"/wp-admin/admin-ajax.php","nonce":"4e8371e942"};
 //# sourceURL=sp-real-blocks-frontend-js-extra
 </script>
-<script id="sp-real-blocks-frontend-js" src="https://thedietdiary.in/wp-content/plugins/testimonial-free/src/Blocks/assets/js/script.js?ver=4.0.0"></script>
-<script id="elementor-webpack-runtime-js" src="https://thedietdiary.in/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.4"></script>
-<script id="elementor-frontend-modules-js" src="https://thedietdiary.in/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.4"></script>
+<script id="sp-real-blocks-frontend-js" src="/wp-content/plugins/testimonial-free/src/Blocks/assets/js/script.js?ver=4.0.0"></script>
+<script id="elementor-webpack-runtime-js" src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.2.4"></script>
+<script id="elementor-frontend-modules-js" src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.2.4"></script>
 <script id="jquery-ui-core-js-before">
 jQuery.uiBackCompat = true;
 //# sourceURL=jquery-ui-core-js-before
 </script>
-<script id="jquery-ui-core-js" src="https://thedietdiary.in/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
+<script id="jquery-ui-core-js" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
 <script id="elementor-frontend-js-extra">
-var EAELImageMaskingConfig = {"svg_dir_url":"https://thedietdiary.in/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/"};
+var EAELImageMaskingConfig = {"svg_dir_url":"/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/img/image-masking/svg-shapes/"};
 //# sourceURL=elementor-frontend-js-extra
 </script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_variables":true},"urls":{"assets":"https:\\/\\/thedietdiary.in\\/wp-content\\/plugins\\/elementor\\/assets\\/","ajaxurl":"https:\\/\\/thedietdiary.in\\/wp-admin\\/admin-ajax.php","uploadUrl":"https:\\/\\/thedietdiary.in\\/wp-content\\/uploads"},"nonces":{"floatingButtonsClickTracking":"0f35c11498","atomicFormsSendForm":"82da2aa1a8"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":1995,"title":"Testimonial%20-","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"theme_builder_v2":true,"nested-elements":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true,"e_pro_variables":true},"urls":{"assets":"\\/wp-content\\/plugins\\/elementor\\/assets\\/","ajaxurl":"\\/wp-admin\\/admin-ajax.php","uploadUrl":"\\/wp-content\\/uploads"},"nonces":{"floatingButtonsClickTracking":"0f35c11498","atomicFormsSendForm":"82da2aa1a8"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","woocommerce_notices_elements":[]},"post":{"id":1995,"title":"Testimonial%20-","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
-<script id="elementor-frontend-js" src="https://thedietdiary.in/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.4"></script>
-<script data-wp-strategy="defer" defer fetchpriority="low" id="joinchat-js" src="https://thedietdiary.in/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js?ver=6.3.2"></script>
-<script id="sourcebuster-js-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=11.1.1"></script>
+<script id="elementor-frontend-js" src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.4"></script>
+<script data-wp-strategy="defer" defer fetchpriority="low" id="joinchat-js" src="/wp-content/plugins/creame-whatsapp-me/public/js/joinchat.min.js?ver=6.3.2"></script>
+<script id="sourcebuster-js-js" src="/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=11.1.1"></script>
 <script id="wc-order-attribution-js-extra">
-var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://thedietdiary.in/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
 //# sourceURL=wc-order-attribution-js-extra
 </script>
-<script id="wc-order-attribution-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=11.1.1"></script>
+<script id="wc-order-attribution-js" src="/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=11.1.1"></script>
 <script id="eael-general-js-extra">
-var localize = {"ajaxurl":"https://thedietdiary.in/wp-admin/admin-ajax.php","nonce":"7073698358","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https://thedietdiary.in/testimonial/","cart_redirectition":"no","cart_page_url":"https://thedietdiary.in","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+var localize = {"ajaxurl":"/wp-admin/admin-ajax.php","nonce":"7073698358","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"/testimonial/","cart_redirectition":"no","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
 //# sourceURL=eael-general-js-extra
 </script>
-<script id="eael-general-js" src="https://thedietdiary.in/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.8.4"></script>
-<script id="hfe-frontend-js-js" src="https://thedietdiary.in/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=2.9.4"></script>
-<script id="elementor-pro-webpack-runtime-js" src="https://thedietdiary.in/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.35.1"></script>
-<script id="wp-hooks-js" src="https://thedietdiary.in/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
-<script id="wp-i18n-js" src="https://thedietdiary.in/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="eael-general-js" src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.8.4"></script>
+<script id="hfe-frontend-js-js" src="/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=2.9.4"></script>
+<script id="elementor-pro-webpack-runtime-js" src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.35.1"></script>
+<script id="wp-hooks-js" src="/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\\/\\/thedietdiary.in\\/wp-admin\\/admin-ajax.php","nonce":"0df98d96e3","urls":{"assets":"https:\\/\\/thedietdiary.in\\/wp-content\\/plugins\\/elementor-pro\\/assets\\/","rest":"https:\\/\\/thedietdiary.in\\/wp-json\\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"https:\\/\\/thedietdiary.in","checkout_page_url":"https:\\/\\/thedietdiary.in","fragments_nonce":"94236dac20"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\\/\\/thedietdiary.in\\/wp-content\\/plugins\\/elementor-pro\\/modules\\/lottie\\/assets\\/animations\\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"\\/wp-admin\\/admin-ajax.php","nonce":"0df98d96e3","urls":{"assets":"\\/wp-content\\/plugins\\/elementor-pro\\/assets\\/","rest":"\\/wp-json\\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"woocommerce":{"menu_cart":{"cart_page_url":"","checkout_page_url":"","fragments_nonce":"94236dac20"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"\\/wp-content\\/plugins\\/elementor-pro\\/modules\\/lottie\\/assets\\/animations\\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 </script>
-<script id="elementor-pro-frontend-js" src="https://thedietdiary.in/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.35.1"></script>
-<script id="pro-elements-handlers-js" src="https://thedietdiary.in/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.35.1"></script>
-<script data-wp-strategy="defer" defer id="wc-zoom-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.11.1.1"></script>
-<script data-wp-strategy="defer" defer id="wc-flexslider-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.11.1.1"></script>
-<script data-wp-strategy="defer" defer id="wc-photoswipe-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.11.1.1"></script>
-<script data-wp-strategy="defer" defer id="wc-photoswipe-ui-default-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.11.1.1"></script>
-<script id="underscore-js" src="https://thedietdiary.in/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
+<script id="elementor-pro-frontend-js" src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.35.1"></script>
+<script id="pro-elements-handlers-js" src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.35.1"></script>
+<script data-wp-strategy="defer" defer id="wc-zoom-js" src="/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.11.1.1"></script>
+<script data-wp-strategy="defer" defer id="wc-flexslider-js" src="/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.11.1.1"></script>
+<script data-wp-strategy="defer" defer id="wc-photoswipe-js" src="/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.11.1.1"></script>
+<script data-wp-strategy="defer" defer id="wc-photoswipe-ui-default-js" src="/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.11.1.1"></script>
+<script id="underscore-js" src="/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
 <script id="wp-util-js-extra">
 var _wpUtilSettings = {"ajax":{"url":"/wp-admin/admin-ajax.php"}};
 //# sourceURL=wp-util-js-extra
 </script>
-<script id="wp-util-js" src="https://thedietdiary.in/wp-includes/js/wp-util.min.js?ver=7.1.1"></script>
+<script id="wp-util-js" src="/wp-includes/js/wp-util.min.js?ver=7.1.1"></script>
 <script id="wc-add-to-cart-variation-js-extra">
 var wc_add_to_cart_variation_params = {"wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination.","i18n_reset_alert_text":"Your selection has been reset. Please select some product options before adding this product to your cart."};
 //# sourceURL=wc-add-to-cart-variation-js-extra
 </script>
-<script data-wp-strategy="defer" defer id="wc-add-to-cart-variation-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=11.1.1"></script>
+<script data-wp-strategy="defer" defer id="wc-add-to-cart-variation-js" src="/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=11.1.1"></script>
 <script id="wc-single-product-js-extra">
 var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","i18n_rating_options":["1 of 5 stars","2 of 5 stars","3 of 5 stars","4 of 5 stars","5 of 5 stars"],"i18n_product_gallery_trigger_text":"View full-screen image gallery","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
 //# sourceURL=wc-single-product-js-extra
 </script>
-<script data-wp-strategy="defer" defer id="wc-single-product-js" src="https://thedietdiary.in/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=11.1.1"></script>
+<script data-wp-strategy="defer" defer id="wc-single-product-js" src="/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=11.1.1"></script>
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>
 			<script id="wp-emoji-settings" type="application/json">
-{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://thedietdiary.in/wp-includes/js/wp-emoji-release.min.js?ver=7.1.1"}}
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.1"}}
 </script>
 <script type="module">
 /*! This file is auto-generated */
 var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\\ud83c\\udff3\\ufe0f\\u200d\\u26a7\\ufe0f","\\ud83c\\udff3\\ufe0f\\u200b\\u26a7\\ufe0f")?!1:!n(e,"\\ud83c\\udde8\\ud83c\\uddf6","\\ud83c\\udde8\\u200b\\ud83c\\uddf6")&&!n(e,"\\ud83c\\udff4\\udb40\\udc67\\udb40\\udc62\\udb40\\udc65\\udb40\\udc6e\\udb40\\udc67\\udb40\\udc7f","\\ud83c\\udff4\\u200b\\udb40\\udc67\\u200b\\udb40\\udc62\\u200b\\udb40\\udc65\\u200b\\udb40\\udc6e\\u200b\\udb40\\udc67\\u200b\\udb40\\udc7f");case"emoji":return!r(e,"\\ud83e\\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
-//# sourceURL=https://thedietdiary.in/wp-includes/js/wp-emoji-loader.min.js
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
 </script>
 <link rel='stylesheet' id='joinchat-css' href="/wp-content/plugins/creame-whatsapp-me/public/css/joinchat.min.css?ver=6.3.2" media='all' />
 	`;
@@ -541,23 +541,23 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 .wp-block-joinchat-button{align-items:center;display:flex;flex-flow:row nowrap}.wp-block-joinchat-button.is-vertical{flex-direction:column}.wp-block-joinchat-button.is-vertical.is-content-justification-left{align-items:flex-start}.wp-block-joinchat-button.is-vertical.is-content-justification-center{align-items:center}.wp-block-joinchat-button.is-vertical.is-content-justification-right{align-items:flex-end}.wp-block-joinchat-button:not(.is-vertical).is-content-justification-left{justify-content:flex-start}.wp-block-joinchat-button:not(.is-vertical).is-content-justification-center{justify-content:center}.wp-block-joinchat-button:not(.is-vertical).is-content-justification-right{justify-content:flex-end}.wp-block-joinchat-button:not(.is-vertical).is-content-justification-space-between{justify-content:space-between}.wp-block-joinchat-button figure{align-items:center;display:flex;flex-direction:column;flex-shrink:0;margin:0;padding:0}.wp-block-joinchat-button figcaption{font:normal normal 400 .6em/2em var(--wp--preset--font-family--system-font,sans-serif);margin:0;padding:0}.wp-block-joinchat-button .joinchat-button__qr{background-color:#fff;box-sizing:content-box;display:block;height:200px;overflow:hidden;padding:10px;width:200px}.wp-block-joinchat-button .joinchat-button__qr canvas,.wp-block-joinchat-button .joinchat-button__qr img{display:block;margin:auto}.wp-block-joinchat-button .wp-block-buttons{flex:1 1 auto;margin:0;max-width:100%;min-width:0;width:100%}.wp-block-joinchat-button .wp-block-button.wp-block-button__width-25{min-width:25%;width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-joinchat-button .wp-block-button.wp-block-button__width-50{min-width:50%;width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-joinchat-button .wp-block-button.wp-block-button__width-75{min-width:75%;width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-joinchat-button .wp-block-button.wp-block-button__width-100{min-width:100%;width:100%}.wp-block-joinchat-button .joinchat-button__link,.wp-block-joinchat-button .wp-block-button__link{align-items:center;display:inline-flex;flex-flow:row nowrap;justify-content:center;width:100%}.wp-block-joinchat-button .joinchat-button__link:before,.wp-block-joinchat-button .wp-block-button__link:before{background:transparent var(--joinchat-ico) no-repeat center;background-size:100%;content:"";display:block;height:1.5em;margin:-.75em .75em -.75em 0;width:1.5em}.wp-block-joinchat-button .joinchat-button__link{width:auto}.wp-block-joinchat-button:has(.joinchat-button__link){border:none!important;display:flex;flex-direction:column}@media (orientation:landscape)and (height >= 481px),(orientation:portrait)and (width >= 481px){.wp-block-joinchat-button.joinchat-button--qr-only .wp-block-buttons{display:none}}@media (orientation:landscape)and (height <= 480px),(width <= 480px){.wp-block-joinchat-button figure{display:none}}
 
-/*# sourceURL=https://thedietdiary.in/wp-content/plugins/creame-whatsapp-me/gutenberg/build/style-index.css */
+/*# sourceURL=/wp-content/plugins/creame-whatsapp-me/gutenberg/build/style-index.css */
 
 
-.real-testimonials .rt-submit-btn {
-    background-color: #133E87; /* Button background color */
-    color: #fff; /* Text color */
-    font-size: 16px; /* Font size */
-    padding: 10px 20px; /* Padding */
-    border-radius: 5px; /* Rounded corners */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-.real-testimonials .rt-submit-btn:hover {
-    background-color: #0e2f6d; /* Darker blue on hover */
-    transform: scale(1.05); /* Slightly enlarge button */
+.real-testimonials .rt-submit-btn {
+    background-color: #133E87; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.real-testimonials .rt-submit-btn:hover {
+    background-color: #0e2f6d; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
 }
 /*# sourceURL=sp-real-blocks-style-inline-css */
 
@@ -762,20 +762,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=woocommerce-inline-inline-css */
 
 
-.real-testimonials .rt-submit-btn {
-    background-color: #133E87; /* Button background color */
-    color: #fff; /* Text color */
-    font-size: 16px; /* Font size */
-    padding: 10px 20px; /* Padding */
-    border-radius: 5px; /* Rounded corners */
-    border: none; /* Remove border */
-    cursor: pointer; /* Pointer cursor */
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-}
-
-.real-testimonials .rt-submit-btn:hover {
-    background-color: #0e2f6d; /* Darker blue on hover */
-    transform: scale(1.05); /* Slightly enlarge button */
+.real-testimonials .rt-submit-btn {
+    background-color: #133E87; /* Button background color */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.real-testimonials .rt-submit-btn:hover {
+    background-color: #0e2f6d; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
 }
 .woocommerce-product-gallery{ opacity: 1 !important; }
 
@@ -835,7 +835,7 @@ export default function Page() {
   return (
     <>
       {pageInlineStyles && <style dangerouslySetInnerHTML={{ __html: pageInlineStyles }} />}
-      <div className="wp-singular page-template page-template-elementor_header_footer page page-id-1995 wp-custom-logo wp-embed-responsive wp-theme-astra theme-astra woocommerce-no-js ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.12 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-template-full-width elementor-kit-14 elementor-page elementor-page-1995" dangerouslySetInnerHTML={{ __html: bodyHTML }} />
+      <div className="wp-singular page-template page-template-elementor_header_footer page page-id-1995 wp-custom-logo wp-embed-responsive wp-theme-astra theme-astra woocommerce-no-js ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.12 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-template-full-width elementor-kit-14 elementor-page elementor-page-1995" dangerouslySetInnerHTML={{ __html: bodyHTML }} suppressHydrationWarning />
     </>
   );
 }

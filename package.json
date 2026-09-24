@@ -4,7 +4,7 @@
   "description": "Shivangi Pancholi - Expert Nutritionist & Dietitian Next.js Web Application",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001 -H 0.0.0.0",
     "build": "next build",
     "start": "node server.js"
   },

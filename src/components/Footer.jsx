@@ -58,8 +58,19 @@ export default function Footer() {
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem', marginBottom: '8px' }}>
               📞 Phone / WhatsApp: <a href="tel:+918469077410" style={{ color: '#ffffff', fontWeight: 600 }}>+91 84690 77410</a>
             </p>
+            <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem', marginBottom: '8px' }}>
+              Instagram:{' '}
+              <a
+                href="https://www.instagram.com/_the.diet.diary_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#ffffff', fontWeight: 600 }}
+              >
+                @_the.diet.diary_
+              </a>
+            </p>
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.95rem' }}>
-              🌐 Website: <a href="https://thedietdiary.in/" style={{ color: '#ffffff', fontWeight: 600 }}>thedietdiary.in</a>
+              Website: <a href="https://thedietdiary.in/" style={{ color: '#ffffff', fontWeight: 600 }}>thedietdiary.in</a>
             </p>
           </div>
         </div>

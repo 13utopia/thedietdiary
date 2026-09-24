@@ -2,6 +2,7 @@ import './globals.css';
 import Script from 'next/script';
 import SkipLink from '../components/SkipLink';
 import ThemeManager from '../components/ThemeManager';
+import SiteEnhancements from '../components/SiteEnhancements';
 
 export const metadataBase = new URL('https://thedietdiary.in');
 
@@ -123,12 +124,44 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="/wp-content/uploads/essential-addons-elementor/eael-1015.css" />
         <link rel="stylesheet" href="/wp-content/uploads/essential-addons-elementor/eael-721.css" />
         <link rel="stylesheet" href="/wp-includes/css/dist/block-library/style.min.css" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "The Diet Diary - Shivangi Pancholi | Nutritionist & Dietitian",
+              "image": "https://thedietdiary.in/website-images/Asset-10.webp",
+              "@id": "https://thedietdiary.in/#nutritionist",
+              "url": "https://thedietdiary.in",
+              "telephone": "+918469077410",
+              "priceRange": "₹₹",
+              "description": "Certified Nutritionist & Dietitian providing customized Indian diet plans for weight loss, PCOS management, diabetes, gut health, and festive detox. Online consultations across India — no clinic address required.",
+              "areaServed": [
+                { "@type": "City", "name": "Ahmedabad" },
+                { "@type": "City", "name": "Vadodara" },
+                { "@type": "City", "name": "Surat" },
+                { "@type": "City", "name": "Mumbai" },
+                { "@type": "Country", "name": "India" },
+                { "@type": "AdministrativeArea", "name": "Worldwide Online Consultations" }
+              ],
+              "sameAs": [
+                "https://www.instagram.com/_the.diet.diary_/",
+                "https://www.facebook.com/people/The-Diet-Diary/61573061219105/"
+              ]
+            })
+          }}
+        />
         <script dangerouslySetInnerHTML={{ __html: GLOBAL_CONFIG_SCRIPT }} />
       </head>
-      <body className="home wp-singular page-template-default page page-id-721 wp-custom-logo wp-embed-responsive wp-theme-astra theme-astra woocommerce-no-js ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.12 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-14 elementor-page elementor-page-721">
+      <body
+        className="home wp-singular page-template-default page page-id-721 wp-custom-logo wp-embed-responsive wp-theme-astra theme-astra woocommerce-no-js ehf-header ehf-footer ehf-template-astra ehf-stylesheet-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.12 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-14 elementor-page elementor-page-721"
+        suppressHydrationWarning
+      >
         <ThemeManager />
         <SkipLink />
         <main id="main-content">{children}</main>
+        <SiteEnhancements />
         
         {/* Core Scripts */}
         <Script src="/wp-includes/js/jquery/jquery.min.js" strategy="afterInteractive" />
