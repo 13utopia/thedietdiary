@@ -1054,6 +1054,30 @@ h1.entry-title{
   pointer-events: none;
 }
 
+/*
+  Hero Motion FX was painting over About (Elementor .e-con overflow:visible wins
+  without !important). Clip hero + stack About above any bleed.
+*/
+.elementor-721 .elementor-element.elementor-element-e393ce7,
+.elementor-721 .elementor-element.elementor-element-e393ce7.elementor-motion-effects-element-type-background {
+  overflow: hidden !important;
+  isolation: isolate;
+  z-index: 1;
+  position: relative;
+}
+.elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container {
+  overflow: hidden !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.elementor-721 .elementor-element.elementor-element-84ffd81,
+.elementor-721 .elementor-element.elementor-element-b322b28 {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
 /* Hero quote: stop clipping on tablet / mid desktop */
 @media (min-width: 768px) and (max-width: 1200px) {
   .elementor-721 .elementor-element.elementor-element-e393ce7 {
@@ -1069,35 +1093,59 @@ h1.entry-title{
   }
 }
 
-/* Mobile: About stacks cleanly + full-bleed hero */
+/* Mobile: About stacks cleanly + full-bleed hero (no inset strip over portrait) */
 @media (max-width: 767px) {
-  .elementor-721 .elementor-element.elementor-element-c3f1d6e,
+  .elementor-721 .elementor-element.elementor-element-c3f1d6e {
+    --width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+  }
   .elementor-721 .elementor-element.elementor-element-e393ce7,
   .elementor-721 .elementor-element.elementor-element-84ffd81 {
     --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .elementor-721 .elementor-element.elementor-element-e393ce7 {
     --padding-left: 16px !important;
     padding-left: 16px !important;
     --padding-right: 16px !important;
     padding-right: 16px !important;
+    --min-height: 420px !important;
+    min-height: 420px !important;
+  }
+  .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    height: 100% !important;
+    top: 0 !important;
+    background-position: center center !important;
   }
   .elementor-721 .elementor-element.elementor-element-16a0d6d {
     --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
   }
+  .elementor-721 .elementor-element.elementor-element-84ffd81 {
+    --padding-left: 0 !important;
+    padding-left: 0 !important;
+    --min-height: 0 !important;
+    min-height: 0 !important;
+  }
   .elementor-721 .elementor-element.elementor-element-d20059d {
     min-height: 420px !important;
-    --width: 92% !important;
-    width: 92% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    --width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .elementor-721 .elementor-element.elementor-element-b322b28 {
-    padding: 12px 22px 28px !important;
+    --margin-top: 0 !important;
+    margin-top: 0 !important;
+    --padding-left: 0 !important;
+    padding: 20px 22px 32px !important;
     text-align: center;
   }
   .elementor-721 .elementor-element.elementor-element-28a4b39 .elementor-heading-title {

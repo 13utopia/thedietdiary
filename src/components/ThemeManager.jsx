@@ -127,10 +127,11 @@ export default function ThemeManager() {
       raf = 0;
       const vh = window.innerHeight || 1;
 
+      const motionScale = window.innerWidth < 768 ? 12 : 40;
       bgMotionTargets.forEach(({ el, layer, speed, direction }) => {
         const rect = el.getBoundingClientRect();
         const progress = (vh / 2 - (rect.top + rect.height / 2)) / vh;
-        const y = progress * speed * 40 * direction;
+        const y = progress * speed * motionScale * direction;
         // Elementor Pro drives layers via --translateY
         layer.style.setProperty('--translateY', `${y.toFixed(2)}px`);
         layer.style.transform = `translateY(var(--translateY))`;
