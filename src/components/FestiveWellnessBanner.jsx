@@ -10,7 +10,7 @@ export default function FestiveWellnessBanner() {
     <section
       ref={ref}
       id="festive-offer"
-      className="elementor-section elementor-top-section elementor-section-full_width elementor-section-height-default dd-e-white"
+      className="elementor-section elementor-top-section elementor-section-full_width elementor-section-height-default dd-e-sage"
     >
       <div className="elementor-container elementor-column-gap-no">
         <div className="elementor-column elementor-col-50">
@@ -34,7 +34,7 @@ export default function FestiveWellnessBanner() {
           <div className="elementor-widget-wrap elementor-element-populated dd-e-copy-pad">
             <div className="elementor-element elementor-widget elementor-widget-heading">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default dd-e-title-green">
+                <h2 className="elementor-heading-title elementor-size-default dd-e-title-dark">
                   Navratri Fasting Detox &amp; Diwali Wellness
                 </h2>
               </div>

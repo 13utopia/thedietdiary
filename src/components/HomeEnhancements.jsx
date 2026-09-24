@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import TrustStatsBanner from './TrustStatsBanner';
+import TransformationsBanner from './TransformationsBanner';
 import FestiveWellnessBanner from './FestiveWellnessBanner';
 import ClientReviewsSection from './ClientReviewsSection';
 import GooglePresenceCard from './GooglePresenceCard';
@@ -77,6 +78,7 @@ export default function HomeEnhancements({
         `}</style>
       ) : null}
       <TrustStatsBanner />
+      <TransformationsBanner />
       {includeFestive ? <FestiveWellnessBanner /> : null}
       <ClientReviewsSection />
       <GooglePresenceCard />

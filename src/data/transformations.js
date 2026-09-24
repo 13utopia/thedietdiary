@@ -1,0 +1,36 @@
+/** Measurable client changes — privacy-friendly visuals, no clinic gimmicks */
+export const transformations = [
+  {
+    id: 'waist',
+    name: 'Aanal P.',
+    focus: 'Postpartum',
+    before: { label: 'Before', value: '32″', note: 'waist' },
+    after: { label: 'After', value: '26″', note: 'waist' },
+    result: '7 kg down in 3 months',
+    detail: 'Lactating-friendly Indian meals — no weakness, no crash diets.',
+    image: '/website-images/client-review-waist-progress.jpg',
+    imageAlt: 'Waist measurement progress photo shared privately',
+  },
+  {
+    id: 'weight-pcos',
+    name: 'Neha S.',
+    focus: 'PCOS & energy',
+    before: { label: 'Before', value: 'Stuck', note: 'weight' },
+    after: { label: 'After', value: '9.5 kg', note: 'lost' },
+    result: 'Steadier cycles in 3 months',
+    detail: 'Roti, dal, sabzi and seed cycling — no boiled food, no pills.',
+    image: '/website-images/client-review-neha.jpg',
+    imageAlt: 'Neha after her PCOS-friendly nutrition plan',
+  },
+  {
+    id: 'gut',
+    name: 'Priyanka R.',
+    focus: 'Gut & acidity',
+    before: { label: 'Before', value: 'Daily', note: 'antacids' },
+    after: { label: 'After', value: 'Calm', note: 'digestion' },
+    result: '6 kg lost · acidity eased',
+    detail: 'Meal timings, gut-friendly breakfasts, and WhatsApp check-ins.',
+    image: '/website-images/client-review-diet-diary-prep.jpg',
+    imageAlt: 'Home food prep from a gut-healing meal plan',
+  },
+];
