@@ -3,8 +3,8 @@
 import { useEffect, useRef } from 'react';
 
 /**
- * Elementor-style entrance: fadeInUp when the section enters the viewport.
- * Avoids visibility:hidden (breaks IntersectionObserver in Chromium).
+ * Match Elementor frontend entrance: elementor-invisible → animated fadeInUp.
+ * Also tags .elementor-button children with grow hover like the dump.
  */
 export default function useElementorFadeIn(animation = 'fadeInUp') {
   const ref = useRef(null);
@@ -13,11 +13,23 @@ export default function useElementorFadeIn(animation = 'fadeInUp') {
     const el = ref.current;
     if (!el) return undefined;
 
-    el.classList.add('dd-anim-pending');
+    el.classList.add('elementor-invisible', 'dd-anim-pending');
+
+    el.querySelectorAll('.elementor-button').forEach((btn) => {
+      btn.classList.add('elementor-animation-grow');
+    });
 
     const reveal = () => {
-      el.classList.remove('dd-anim-pending');
+      el.classList.remove('elementor-invisible', 'dd-anim-pending');
       el.classList.add('animated', animation);
+
+      el.querySelectorAll('.elementor-column, .dd-e-xform-col, .dd-e-review-col').forEach(
+        (col, i) => {
+          if (col === el) return;
+          col.classList.add('animated', animation);
+          col.style.animationDelay = `${Math.min(i * 0.12, 0.48)}s`;
+        }
+      );
     };
 
     const observer = new IntersectionObserver(
@@ -28,14 +40,13 @@ export default function useElementorFadeIn(animation = 'fadeInUp') {
           observer.unobserve(el);
         });
       },
-      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
     );
 
     observer.observe(el);
 
-    // Reveal immediately if already on screen (e.g. short pages / deep links)
     const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.92 && rect.bottom > 0) {
+    if (rect.top < window.innerHeight * 0.88 && rect.bottom > 0) {
       reveal();
       observer.unobserve(el);
     }

@@ -11,7 +11,7 @@ const emptyForm = {
   quote: '',
 };
 
-/** Client stories + review form — Elementor section markup */
+/** Client stories + review form — Elementor section markup & kit typography */
 export default function ClientReviewsSection() {
   const { ref } = useElementorFadeIn('fadeInUp');
   const { ref: formRef } = useElementorFadeIn('fadeInUp');
@@ -77,12 +77,12 @@ export default function ClientReviewsSection() {
         id="client-stories"
         className="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default dd-e-white"
       >
-        <div className="elementor-container elementor-column-gap-no">
+        <div className="elementor-container elementor-column-gap-default">
           <div className="elementor-column elementor-col-100">
-            <div className="elementor-widget-wrap elementor-element-populated">
-              <div className="elementor-element elementor-widget elementor-widget-heading" style={{ textAlign: 'center' }}>
+            <div className="elementor-widget-wrap elementor-element-populated" style={{ textAlign: 'center' }}>
+              <div className="elementor-element elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default dd-e-title-green">
+                  <h2 className="elementor-heading-title elementor-size-default dd-e-title">
                     Real Clients, Genuine Results
                   </h2>
                 </div>
@@ -104,13 +104,12 @@ export default function ClientReviewsSection() {
                       decoding="async"
                       width={item.hasFace ? 480 : 640}
                       height={item.hasFace ? 600 : 420}
-                      className={item.hasFace ? 'dd-e-img-portrait' : 'dd-e-img-wide'}
                     />
                   </div>
                 </div>
                 <div className="elementor-element elementor-widget elementor-widget-heading">
                   <div className="elementor-widget-container">
-                    <h3 className="elementor-heading-title elementor-size-default dd-e-review-name">{item.name}</h3>
+                    <h3 className="elementor-heading-title elementor-size-default dd-e-subhead">{item.name}</h3>
                   </div>
                 </div>
                 <div className="elementor-element elementor-widget elementor-widget-text-editor">
@@ -137,20 +136,20 @@ export default function ClientReviewsSection() {
       <section
         ref={formRef}
         id="post-review"
-        className="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default dd-e-sage dd-e-review-form"
+        className="elementor-section elementor-top-section elementor-section-boxed elementor-section-height-default dd-e-sage dd-e-pattern"
       >
-        <div className="elementor-container elementor-column-gap-no">
+        <div className="elementor-container elementor-column-gap-default">
           <div className="elementor-column elementor-col-100">
             <div className="elementor-widget-wrap elementor-element-populated" style={{ textAlign: 'center' }}>
               <div className="elementor-element elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default dd-e-title-dark">Leave a Review</h2>
+                  <h2 className="elementor-heading-title elementor-size-default dd-e-title">Leave a Review</h2>
                 </div>
               </div>
 
-              <form className="dd-review-form__fields" onSubmit={handleSubmit}>
-                <div className="dd-review-form__row">
-                  <label className="dd-review-form__field">
+              <form className="dd-e-form" onSubmit={handleSubmit}>
+                <div className="dd-e-form__row">
+                  <label className="dd-e-form__field">
                     <span>Name *</span>
                     <input
                       type="text"
@@ -161,7 +160,7 @@ export default function ClientReviewsSection() {
                       placeholder="Your name"
                     />
                   </label>
-                  <label className="dd-review-form__field">
+                  <label className="dd-e-form__field">
                     <span>City</span>
                     <input
                       type="text"
@@ -173,9 +172,9 @@ export default function ClientReviewsSection() {
                   </label>
                 </div>
 
-                <div className="dd-review-form__field">
+                <div className="dd-e-form__field">
                   <span>Your rating</span>
-                  <div className="dd-review-form__stars" role="radiogroup" aria-label="Rating">
+                  <div className="dd-e-form__stars" role="radiogroup" aria-label="Rating">
                     {[1, 2, 3, 4, 5].map((n) => (
                       <button
                         key={n}
@@ -192,7 +191,7 @@ export default function ClientReviewsSection() {
                   </div>
                 </div>
 
-                <label className="dd-review-form__field">
+                <label className="dd-e-form__field">
                   <span>Your review *</span>
                   <textarea
                     required
@@ -206,7 +205,7 @@ export default function ClientReviewsSection() {
                 </label>
 
                 {status.message ? (
-                  <p className={`dd-review-form__status is-${status.type}`}>{status.message}</p>
+                  <p className={`dd-e-form__status is-${status.type}`}>{status.message}</p>
                 ) : null}
 
                 <div className="elementor-element elementor-align-center elementor-widget elementor-widget-button">
@@ -214,7 +213,7 @@ export default function ClientReviewsSection() {
                     <div className="elementor-button-wrapper">
                       <button
                         type="submit"
-                        className="elementor-button elementor-size-sm"
+                        className="elementor-button elementor-size-sm elementor-animation-grow"
                         disabled={submitting}
                       >
                         <span className="elementor-button-content-wrapper">

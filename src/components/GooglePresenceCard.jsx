@@ -17,7 +17,7 @@ export default function GooglePresenceCard() {
           <div className="elementor-widget-wrap elementor-element-populated" style={{ textAlign: 'center' }}>
             <div className="elementor-element elementor-widget elementor-widget-heading">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default dd-e-title-dark">
+                <h2 className="elementor-heading-title elementor-size-default dd-e-title">
                   Find The Diet Diary Online
                 </h2>
               </div>
@@ -45,7 +45,7 @@ export default function GooglePresenceCard() {
               <div className="elementor-widget-container">
                 <div className="elementor-button-wrapper">
                   <a
-                    className="elementor-button elementor-button-link elementor-size-sm"
+                    className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                     href="https://business.google.com/"
                     target="_blank"
                     rel="noopener noreferrer"

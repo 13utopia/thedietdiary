@@ -21,10 +21,13 @@ export default function TrustStatsBanner() {
       <div className="elementor-container elementor-column-gap-default">
         {items.map((item) => (
           <div key={item.label} className="elementor-column elementor-col-25">
-            <div className="elementor-widget-wrap elementor-element-populated">
+            <div
+              className="elementor-widget-wrap elementor-element-populated"
+              style={{ textAlign: 'center' }}
+            >
               <div className="elementor-element elementor-widget elementor-widget-heading">
                 <div className="elementor-widget-container">
-                  <h2 className="elementor-heading-title elementor-size-default dd-e-stat-num">
+                  <h2 className="elementor-heading-title elementor-size-default dd-e-title">
                     {item.num}
                   </h2>
                 </div>

@@ -34,7 +34,7 @@ export default function FestiveWellnessBanner() {
           <div className="elementor-widget-wrap elementor-element-populated dd-e-copy-pad">
             <div className="elementor-element elementor-widget elementor-widget-heading">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default dd-e-title-dark">
+                <h2 className="elementor-heading-title elementor-size-default dd-e-title">
                   Navratri Fasting Detox &amp; Diwali Wellness
                 </h2>
               </div>
@@ -56,7 +56,7 @@ export default function FestiveWellnessBanner() {
               <div className="elementor-widget-container">
                 <div className="elementor-button-wrapper">
                   <a
-                    className="elementor-button elementor-button-link elementor-size-sm"
+                    className="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
                     href="https://wa.me/918469077410?text=Hi%20Shivangi,%20I%20am%20interested%20in%20the%20Navratri%20%26%20Diwali%20Festive%20Wellness%20Plan!"
                     target="_blank"
                     rel="noopener noreferrer"
