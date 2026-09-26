@@ -143,6 +143,7 @@ class="post-721 page type-page status-publish ast-article-single" id="post-721" 
 				</div>
 		<div class="elementor-element elementor-element-84ffd81 e-con-full e-flex e-con e-child" data-id="84ffd81" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-d20059d e-con-full e-flex e-con e-child" data-id="d20059d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<img class="dd-about-portrait" src="/wp-content/uploads/2024/08/Shivangi-Pancholi-1-1.webp?v=5" alt="Shivangi Pancholi, dietitian at The Diet Diary" width="900" height="1125" decoding="async" />
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-b322b28 e-con-full e-flex e-con e-child" data-id="b322b28" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1037,15 +1038,59 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 h1.entry-title{
 	font-family: 'Italiana';
 }
-/* Elementor About portrait container */
-.elementor-721 .elementor-element.elementor-element-d20059d {
+/* Lock original Elementor hero banner (Untitled-design.webp) — never swap */
+.elementor-721 .elementor-element.elementor-element-e393ce7:not(.elementor-motion-effects-element-type-background),
+.elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("/wp-content/uploads/2025/02/Untitled-design.webp") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* About portrait: fill Elementor container (matches post-721 bottom-center cover) */
+.elementor-element-d20059d {
+  position: relative;
+  overflow: hidden;
   min-height: 483px !important;
   background-image: url("/wp-content/uploads/2024/08/Shivangi-Pancholi-1-1.webp") !important;
   background-position: bottom center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+.elementor-element-d20059d .dd-about-portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  pointer-events: none;
+}
 
+/*
+  Hero Motion FX was painting over About (Elementor .e-con overflow:visible wins
+  without !important). Clip hero + stack About above any bleed.
+*/
+.elementor-721 .elementor-element.elementor-element-e393ce7,
+.elementor-721 .elementor-element.elementor-element-e393ce7.elementor-motion-effects-element-type-background {
+  overflow: hidden !important;
+  isolation: isolate;
+  z-index: 1;
+  position: relative;
+}
+.elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container {
+  overflow: hidden !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.elementor-721 .elementor-element.elementor-element-84ffd81,
+.elementor-721 .elementor-element.elementor-element-b322b28 {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+}
 
 /* Hero quote: stop clipping on tablet / mid desktop */
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1062,35 +1107,64 @@ h1.entry-title{
   }
 }
 
-/* Mobile: About stacks cleanly + full-bleed hero */
+/* Mobile: original mobile hero image + About stacks cleanly */
 @media (max-width: 767px) {
-  .elementor-721 .elementor-element.elementor-element-c3f1d6e,
+  .elementor-721 .elementor-element.elementor-element-e393ce7:not(.elementor-motion-effects-element-type-background),
+  .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("/wp-content/uploads/2024/08/various-green-fruits-vegetables-with-bottles-smoothie-infused-water-white-wooden-table_132254-1167.jpg") !important;
+    background-position: bottom center !important;
+  }
+  .elementor-721 .elementor-element.elementor-element-c3f1d6e {
+    --width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+  }
   .elementor-721 .elementor-element.elementor-element-e393ce7,
   .elementor-721 .elementor-element.elementor-element-84ffd81 {
     --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .elementor-721 .elementor-element.elementor-element-e393ce7 {
     --padding-left: 16px !important;
     padding-left: 16px !important;
     --padding-right: 16px !important;
     padding-right: 16px !important;
+    --min-height: 420px !important;
+    min-height: 420px !important;
+  }
+  .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    height: 100% !important;
+    top: 0 !important;
+    background-position: center center !important;
   }
   .elementor-721 .elementor-element.elementor-element-16a0d6d {
     --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
   }
+  .elementor-721 .elementor-element.elementor-element-84ffd81 {
+    --padding-left: 0 !important;
+    padding-left: 0 !important;
+    --min-height: 0 !important;
+    min-height: 0 !important;
+  }
   .elementor-721 .elementor-element.elementor-element-d20059d {
     min-height: 420px !important;
-    --width: 92% !important;
-    width: 92% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    --width: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .elementor-721 .elementor-element.elementor-element-b322b28 {
-    padding: 12px 22px 28px !important;
+    --margin-top: 0 !important;
+    margin-top: 0 !important;
+    --padding-left: 0 !important;
+    padding: 20px 22px 32px !important;
     text-align: center;
   }
   .elementor-721 .elementor-element.elementor-element-28a4b39 .elementor-heading-title {
