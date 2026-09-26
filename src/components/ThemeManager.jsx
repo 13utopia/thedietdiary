@@ -78,7 +78,7 @@ export default function ThemeManager() {
 
     // --- Motion FX: background parallax layers ---
     const HERO_BG =
-      'url("/wp-content/uploads/2025/02/Untitled-design.webp?v=20260926e")';
+      'url("/wp-content/uploads/2024/08/hero-original-smoothie-table.webp?v=20260926f")';
     const bgMotionTargets = [];
     document.querySelectorAll('[data-settings*="background_motion_fx"]').forEach((el) => {
       const settings = parseSettings(el);

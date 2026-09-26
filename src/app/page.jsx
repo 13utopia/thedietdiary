@@ -1038,11 +1038,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 h1.entry-title{
 	font-family: 'Italiana';
 }
-/* Lock original Elementor hero banner — paint on container AND Motion FX layer */
+/* Original Elementor hero — smoothie bottles on white wooden table (not the later Untitled flatlay) */
 .elementor-721 .elementor-element.elementor-element-e393ce7,
 .elementor-721 .elementor-element.elementor-element-e393ce7.elementor-motion-effects-element-type-background,
 .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("/wp-content/uploads/2025/02/Untitled-design.webp?v=20260926e") !important;
+  background-image: url("/wp-content/uploads/2024/08/hero-original-smoothie-table.webp?v=20260926f") !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -1134,8 +1134,8 @@ h1.entry-title{
 @media (max-width: 767px) {
   .elementor-721 .elementor-element.elementor-element-e393ce7,
   .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-image: url("/wp-content/uploads/2024/08/various-green-fruits-vegetables-with-bottles-smoothie-infused-water-white-wooden-table_132254-1167.jpg?v=20260926e") !important;
-    background-position: bottom center !important;
+    background-image: url("/wp-content/uploads/2024/08/hero-original-smoothie-table.webp?v=20260926f") !important;
+    background-position: center center !important;
   }
   .elementor-721 .elementor-element.elementor-element-c3f1d6e {
     --width: 100% !important;
