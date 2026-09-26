@@ -143,7 +143,7 @@ class="post-721 page type-page status-publish ast-article-single" id="post-721" 
 				</div>
 		<div class="elementor-element elementor-element-84ffd81 e-con-full e-flex e-con e-child" data-id="84ffd81" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 		<div class="elementor-element elementor-element-d20059d e-con-full e-flex e-con e-child" data-id="d20059d" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-				<img class="dd-about-portrait" src="/wp-content/uploads/2024/08/Shivangi-Pancholi-1-1.webp?v=20260926c" alt="Shivangi Pancholi, dietitian at The Diet Diary" width="900" height="1125" decoding="async" />
+				<img class="dd-about-portrait" src="/wp-content/uploads/2024/08/Shivangi-Pancholi-1-1.webp?v=20260926e" alt="Shivangi Pancholi, dietitian at The Diet Diary" width="720" height="900" decoding="async" />
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-b322b28 e-con-full e-flex e-con e-child" data-id="b322b28" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1042,37 +1042,14 @@ h1.entry-title{
 .elementor-721 .elementor-element.elementor-element-e393ce7,
 .elementor-721 .elementor-element.elementor-element-e393ce7.elementor-motion-effects-element-type-background,
 .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-  background-image: url("/wp-content/uploads/2025/02/Untitled-design.webp?v=20260926c") !important;
+  background-image: url("/wp-content/uploads/2025/02/Untitled-design.webp?v=20260926e") !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
 
-/* About portrait: fill Elementor container (matches post-721 bottom-center cover) */
-.elementor-element-d20059d {
-  position: relative;
-  overflow: hidden;
-  min-height: 483px !important;
-  background-image: url("/wp-content/uploads/2024/08/Shivangi-Pancholi-1-1.webp?v=20260926c") !important;
-  background-position: bottom center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-}
-.elementor-element-d20059d .dd-about-portrait {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  display: block;
-  pointer-events: none;
-  z-index: 1;
-}
-
 /*
-  Hero Motion FX was painting over About (Elementor .e-con overflow:visible wins
-  without !important). Clip hero + stack About above any bleed.
+  Hero Motion FX was painting over About. Clip hero + stack About above any bleed.
 */
 .elementor-721 .elementor-element.elementor-element-e393ce7,
 .elementor-721 .elementor-element.elementor-element-e393ce7.elementor-motion-effects-element-type-background {
@@ -1087,11 +1064,46 @@ h1.entry-title{
   width: 100% !important;
   height: 100% !important;
 }
-.elementor-721 .elementor-element.elementor-element-84ffd81,
-.elementor-721 .elementor-element.elementor-element-b322b28 {
+
+/*
+  About band — Elementor uses a thin portrait column + text overlay (padding-left 52%).
+  Force reliable dimensions so the night portrait never collapses into blue sky strips.
+*/
+.elementor-721 .elementor-element.elementor-element-84ffd81 {
   position: relative;
   z-index: 2;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
+  overflow: visible !important;
+}
+.elementor-721 .elementor-element.elementor-element-d20059d {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 38.73% !important;
+  max-width: 420px !important;
+  min-height: 520px !important;
+  height: 520px !important;
+  flex-grow: 0 !important;
+  flex-shrink: 0 !important;
+  background-image: url("/wp-content/uploads/2024/08/Shivangi-Pancholi-1-1.webp?v=20260926e") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.elementor-721 .elementor-element.elementor-element-d20059d .dd-about-portrait {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  display: block !important;
+  pointer-events: none;
+  z-index: 1;
+}
+.elementor-721 .elementor-element.elementor-element-b322b28 {
+  position: relative;
+  z-index: 3;
+  background-color: transparent !important;
 }
 
 /* Hero quote: stop clipping on tablet / mid desktop */
@@ -1107,14 +1119,22 @@ h1.entry-title{
     --width: 48% !important;
     width: 48% !important;
   }
+  .elementor-721 .elementor-element.elementor-element-84ffd81 {
+    --padding-left: 40px !important;
+    padding-left: 40px !important;
+  }
+  .elementor-721 .elementor-element.elementor-element-d20059d {
+    width: 42% !important;
+    min-height: 460px !important;
+    height: 460px !important;
+  }
 }
 
 /* Mobile: original mobile hero image + About stacks cleanly */
 @media (max-width: 767px) {
-  .elementor-721 .elementor-element.elementor-element-e393ce7:not(.elementor-motion-effects-element-type-background),
   .elementor-721 .elementor-element.elementor-element-e393ce7,
   .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-image: url("/wp-content/uploads/2024/08/various-green-fruits-vegetables-with-bottles-smoothie-infused-water-white-wooden-table_132254-1167.jpg?v=20260926c") !important;
+    background-image: url("/wp-content/uploads/2024/08/various-green-fruits-vegetables-with-bottles-smoothie-infused-water-white-wooden-table_132254-1167.jpg?v=20260926e") !important;
     background-position: bottom center !important;
   }
   .elementor-721 .elementor-element.elementor-element-c3f1d6e {
@@ -1154,12 +1174,13 @@ h1.entry-title{
     padding-left: 0 !important;
     --min-height: 0 !important;
     min-height: 0 !important;
+    display: block !important;
   }
   .elementor-721 .elementor-element.elementor-element-d20059d {
-    min-height: 420px !important;
-    --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
+    min-height: 420px !important;
+    height: 420px !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
