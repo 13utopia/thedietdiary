@@ -1038,124 +1038,306 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 h1.entry-title{
 	font-family: 'Italiana';
 }
-/* About portrait: fill Elementor container (matches post-721 bottom-center cover) */
-.elementor-element-d20059d {
-  position: relative;
-  overflow: hidden;
-}
-.elementor-element-d20059d .dd-about-portrait {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  display: block;
-  pointer-events: none;
+/* =========================================================
+   HERO & ABOUT SECTION FIXES
+   ========================================================= */
+
+/* Hero Container (e393ce7) */
+.elementor-721 .elementor-element.elementor-element-c3f1d6e {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  background-color: #ffffff !important;
 }
 
-/*
-  Hero Motion FX was painting over About (Elementor .e-con overflow:visible wins
-  without !important). Clip hero + stack About above any bleed.
-*/
-.elementor-721 .elementor-element.elementor-element-e393ce7,
-.elementor-721 .elementor-element.elementor-element-e393ce7.elementor-motion-effects-element-type-background {
+.elementor-721 .elementor-element.elementor-element-e393ce7 {
+  width: 100% !important;
+  min-height: 580px !important;
+  position: relative !important;
   overflow: hidden !important;
-  isolation: isolate;
-  z-index: 1;
-  position: relative;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  padding-left: max(5%, calc((100% - 1200px) / 2)) !important;
+  padding-right: max(5%, calc((100% - 1200px) / 2)) !important;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  margin: 0 !important;
 }
+
+.elementor-721 .elementor-element.elementor-element-e393ce7,
+.elementor-721 .elementor-element.elementor-element-e393ce7:not(.elementor-motion-effects-element-type-background),
+.elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+  background-image: url("/website-images/gesunde-ernaehrung.webp") !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container {
-  overflow: hidden !important;
+  position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
-}
-.elementor-721 .elementor-element.elementor-element-84ffd81,
-.elementor-721 .elementor-element.elementor-element-b322b28 {
-  position: relative;
-  z-index: 2;
-  background-color: #ffffff;
+  overflow: hidden !important;
 }
 
-/* Hero quote: stop clipping on tablet / mid desktop */
-@media (min-width: 768px) and (max-width: 1200px) {
+/* Quote card in Hero */
+.elementor-721 .elementor-element.elementor-element-16a0d6d {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 480px !important;
+  min-height: auto !important;
+  padding: 44px 38px !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08) !important;
+  margin: 0 !important;
+}
+
+.elementor-721 .elementor-element.elementor-element-7c04ffd {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: center !important;
+}
+
+.elementor-721 .elementor-element.elementor-element-7c04ffd .elementor-heading-title {
+  font-family: "Italiana", serif !important;
+  font-size: clamp(26px, 3.2vw, 38px) !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  color: #30624E !important;
+}
+
+.elementor-721 .elementor-element.elementor-element-bcd87b4 {
+  margin-top: 24px !important;
+  text-align: center !important;
+}
+
+.elementor-721 .elementor-element.elementor-element-bcd87b4 .elementor-button {
+  background-color: #30624E !important;
+  color: #ffffff !important;
+  padding: 13px 30px !important;
+  border-radius: 30px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  display: inline-block !important;
+  box-shadow: 0 4px 14px rgba(48, 98, 78, 0.25) !important;
+  transition: all 0.3s ease !important;
+}
+
+.elementor-721 .elementor-element.elementor-element-bcd87b4 .elementor-button:hover {
+  background-color: #234739 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(48, 98, 78, 0.35) !important;
+}
+
+/* =========================================================
+   ABOUT SECTION: 2-Column Responsive Layout
+   ========================================================= */
+
+/* Desktop & Tablet: Side-by-Side Flex Layout */
+@media (min-width: 768px) {
+  .elementor-721 .elementor-element.elementor-element-c3f1d6e {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Hero stays full width row */
   .elementor-721 .elementor-element.elementor-element-e393ce7 {
-    --padding-left: 6% !important;
-    padding-left: 6% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 40px !important;
   }
-  .elementor-721 .elementor-element.elementor-element-7c04ffd .elementor-heading-title {
-    font-size: clamp(24px, 3.4vw, 42px) !important;
+
+  /* About Image Column (84ffd81) */
+  .elementor-721 .elementor-element.elementor-element-84ffd81 {
+    flex: 0 0 44% !important;
+    max-width: 460px !important;
+    width: 44% !important;
+    padding: 20px 20px 20px max(4%, calc((100% - 1200px) / 2)) !important;
+    margin: 0 !important;
+    min-height: auto !important;
+    background: transparent !important;
+    z-index: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
-  .elementor-721 .elementor-element.elementor-element-16a0d6d {
-    --width: 48% !important;
-    width: 48% !important;
+
+  .elementor-721 .elementor-element.elementor-element-d20059d {
+    width: 100% !important;
+    height: 520px !important;
+    min-height: 520px !important;
+    position: relative !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12) !important;
+    background-image: none !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-d20059d .dd-about-portrait {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 75% !important;
+    display: block !important;
+    border-radius: 18px !important;
+  }
+
+  /* About Text Column (b322b28) */
+  .elementor-721 .elementor-element.elementor-element-b322b28 {
+    flex: 0 0 54% !important;
+    max-width: 620px !important;
+    width: 54% !important;
+    margin: 0 !important;
+    padding: 20px max(4%, calc((100% - 1200px) / 2)) 20px 40px !important;
+    min-height: auto !important;
+    background: transparent !important;
+    z-index: 2 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-28a4b39 .elementor-heading-title {
+    font-family: "Italiana", serif !important;
+    font-size: clamp(34px, 3.5vw, 46px) !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+    color: #222222 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-f8560f6 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-f8560f6 p {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    color: #444444 !important;
+    margin-bottom: 26px !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-4b8c8c5 .elementor-button {
+    background-color: #30624E !important;
+    color: #ffffff !important;
+    padding: 13px 30px !important;
+    border-radius: 30px !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    display: inline-block !important;
+    box-shadow: 0 4px 14px rgba(48, 98, 78, 0.25) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-4b8c8c5 .elementor-button:hover {
+    background-color: #234739 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(48, 98, 78, 0.35) !important;
   }
 }
 
-/* Mobile: About stacks cleanly + full-bleed hero (no inset strip over portrait) */
+/* Mobile (< 768px): Vertical Clean Stack */
 @media (max-width: 767px) {
   .elementor-721 .elementor-element.elementor-element-c3f1d6e {
-    --width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
     width: 100% !important;
-    max-width: 100% !important;
-    align-items: stretch !important;
+    padding-top: 0 !important;
+    padding-bottom: 40px !important;
   }
-  .elementor-721 .elementor-element.elementor-element-e393ce7,
-  .elementor-721 .elementor-element.elementor-element-84ffd81 {
-    --width: 100% !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
+
   .elementor-721 .elementor-element.elementor-element-e393ce7 {
-    --padding-left: 16px !important;
-    padding-left: 16px !important;
-    --padding-right: 16px !important;
-    padding-right: 16px !important;
-    --min-height: 420px !important;
-    min-height: 420px !important;
+    width: 100% !important;
+    min-height: 480px !important;
+    padding: 40px 16px !important;
+    justify-content: center !important;
   }
-  .elementor-721 .elementor-element.elementor-element-e393ce7 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    height: 100% !important;
-    top: 0 !important;
-    background-position: center center !important;
-  }
+
   .elementor-721 .elementor-element.elementor-element-16a0d6d {
-    --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
+    padding: 32px 20px !important;
   }
+
   .elementor-721 .elementor-element.elementor-element-84ffd81 {
-    --padding-left: 0 !important;
-    padding-left: 0 !important;
-    --min-height: 0 !important;
-    min-height: 0 !important;
-  }
-  .elementor-721 .elementor-element.elementor-element-d20059d {
-    min-height: 420px !important;
-    --width: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    padding: 36px 20px 10px 20px !important;
+    margin: 0 !important;
+    background: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
   }
+
+  .elementor-721 .elementor-element.elementor-element-d20059d {
+    width: 100% !important;
+    max-width: 360px !important;
+    height: 440px !important;
+    min-height: 440px !important;
+    position: relative !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    background-image: none !important;
+  }
+
+  .elementor-721 .elementor-element.elementor-element-d20059d .dd-about-portrait {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 75% !important;
+  }
+
   .elementor-721 .elementor-element.elementor-element-b322b28 {
-    --margin-top: 0 !important;
-    margin-top: 0 !important;
-    --padding-left: 0 !important;
-    padding: 20px 22px 32px !important;
-    text-align: center;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 24px 24px 40px 24px !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    background: transparent !important;
   }
+
   .elementor-721 .elementor-element.elementor-element-28a4b39 .elementor-heading-title {
     font-size: 32px !important;
+    margin-bottom: 14px !important;
+    text-align: center !important;
   }
+
   .elementor-721 .elementor-element.elementor-element-f8560f6 {
     text-align: center !important;
   }
+
+  .elementor-721 .elementor-element.elementor-element-f8560f6 p {
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+  }
+
   .elementor-721 .elementor-element.elementor-element-4b8c8c5 {
-    text-align: center;
+    text-align: center !important;
+    margin-top: 10px !important;
   }
 }
 
