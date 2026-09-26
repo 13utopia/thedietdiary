@@ -77,6 +77,8 @@ export default function ThemeManager() {
     });
 
     // --- Motion FX: background parallax layers ---
+    const HERO_BG =
+      'url("/wp-content/uploads/2025/02/Untitled-design.webp?v=20260926c")';
     const bgMotionTargets = [];
     document.querySelectorAll('[data-settings*="background_motion_fx"]').forEach((el) => {
       const settings = parseSettings(el);
@@ -84,6 +86,13 @@ export default function ThemeManager() {
       const layer = ensureBackgroundMotionLayer(el);
       if (!layer) return;
       layer.style.transition = 'none';
+      // Hero: force original banner onto the Motion FX layer (CSS :not() drops after class add)
+      if (el.classList.contains('elementor-element-e393ce7')) {
+        layer.style.backgroundImage = HERO_BG;
+        layer.style.backgroundSize = 'cover';
+        layer.style.backgroundPosition = 'center center';
+        layer.style.backgroundRepeat = 'no-repeat';
+      }
       const speed = Number(settings.background_motion_fx_translateY_speed?.size) || 2.5;
       const direction = settings.background_motion_fx_translateY_direction === 'negative' ? -1 : 1;
       bgMotionTargets.push({ el, layer, speed, direction });
