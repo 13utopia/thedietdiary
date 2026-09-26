@@ -31,11 +31,9 @@ export default function GooglePresenceCard() {
                 </p>
                 <p className="dd-e-contact-line">
                   <a href="tel:+918469077410">+91 84690 77410</a>
-                  {' · '}
                   <a href="https://www.instagram.com/_the.diet.diary_/" target="_blank" rel="noopener noreferrer">
                     @_the.diet.diary_
                   </a>
-                  {' · '}
                   <a href="https://thedietdiary.in/">thedietdiary.in</a>
                 </p>
               </div>

@@ -359,6 +359,11 @@ body:not(.elementor-default):not(.elementor-page) a:hover {
 
 .diet-diary-enhancements .dd-e-contact-line {
   margin-top: 18px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
 }
 
 .diet-diary-enhancements .dd-e-contact-line a {
@@ -366,6 +371,14 @@ body:not(.elementor-default):not(.elementor-page) a:hover {
   text-decoration: none;
   font-family: 'Poppins', Sans-serif;
   font-weight: 500;
+}
+
+.diet-diary-enhancements .dd-e-contact-line a:not(:last-child)::after {
+  content: '·';
+  margin-left: 10px;
+  color: #7a7a7a;
+  font-weight: 400;
+  pointer-events: none;
 }
 
 .diet-diary-enhancements .dd-e-contact-line a:hover {
@@ -504,75 +517,162 @@ body:not(.elementor-default):not(.elementor-page) a:hover {
   cursor: wait;
 }
 
-@media (max-width: 900px) {
-  .diet-diary-enhancements .dd-e-white,
-  .diet-diary-enhancements .dd-e-xform {
-    padding: 52px 16px 48px;
-  }
-
-  .diet-diary-enhancements .dd-e-sage,
-  .diet-diary-enhancements .dd-e-cta {
-    padding: 48px 16px;
-  }
-
-  .diet-diary-enhancements .dd-e-copy-pad {
-    padding: 28px 20px 32px;
-  }
-
+/* Tablet — stack splits like Elementor mid breakpoint */
+@media (max-width: 1024px) {
   .diet-diary-enhancements .elementor-section .elementor-container {
     flex-wrap: wrap;
   }
 
-  .diet-diary-enhancements .elementor-col-50 {
+  .diet-diary-enhancements .elementor-col-50,
+  .diet-diary-enhancements .elementor-col-33,
+  .diet-diary-enhancements .dd-e-xform-col {
     width: 100%;
-  }
-
-  .diet-diary-enhancements .dd-e-title {
-    font-size: 28px !important;
-  }
-
-  .diet-diary-enhancements .dd-e-xform-grid {
-    margin-top: 28px;
-    margin-bottom: 16px;
   }
 
   .diet-diary-enhancements .dd-e-xform-col {
-    width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto 36px;
-    padding: 0;
+    padding: 0 10px;
   }
 
   .diet-diary-enhancements .dd-e-xform-col:last-child {
     margin-bottom: 8px;
   }
-}
 
-@media (max-width: 767px) {
   .diet-diary-enhancements .dd-e-review-col {
     width: 100%;
+  }
+
+  .diet-diary-enhancements .elementor-col-25 {
+    width: 50%;
+  }
+}
+
+/* Phone — Elementor 767px title / padding rhythm */
+@media (max-width: 767px) {
+  .diet-diary-enhancements .dd-e-white,
+  .diet-diary-enhancements .dd-e-xform {
+    padding: 48px 16px 40px;
+  }
+
+  .diet-diary-enhancements .dd-e-sage,
+  .diet-diary-enhancements .dd-e-cta,
+  .diet-diary-enhancements .dd-e-pattern {
+    padding: 48px 16px 36px;
+  }
+
+  .diet-diary-enhancements #festive-offer.dd-e-sage {
+    padding: 0;
+  }
+
+  .diet-diary-enhancements #festive-offer .elementor-col-50 .elementor-widget-image img {
+    min-height: 240px;
+    max-height: 280px;
+  }
+
+  .diet-diary-enhancements #festive-offer .dd-e-copy-pad {
+    padding: 36px 20px 44px;
+    text-align: center;
+  }
+
+  .diet-diary-enhancements #festive-offer .dd-e-copy-pad .elementor-button-wrapper {
+    text-align: center;
+  }
+
+  .diet-diary-enhancements .dd-e-copy-pad {
+    padding: 28px 18px 32px;
+  }
+
+  /* Match dump mobile section titles (~21–25px Italiana) */
+  .diet-diary-enhancements .dd-e-title {
+    font-size: 25px !important;
+    line-height: 1.25em !important;
+  }
+
+  .diet-diary-enhancements .dd-e-sage .elementor-col-25 .dd-e-title {
+    font-size: 28px !important;
+  }
+
+  .diet-diary-enhancements .dd-e-subhead {
+    font-size: 22px !important;
+  }
+
+  .diet-diary-enhancements .elementor-widget-text-editor p {
+    font-size: 14px;
+    line-height: 1.7em;
+  }
+
+  .diet-diary-enhancements .dd-e-review-grid {
+    padding: 0 12px;
+    margin-top: 20px;
+  }
+
+  .diet-diary-enhancements .dd-e-review-col {
+    padding: 14px 8px 28px;
+  }
+
+  .diet-diary-enhancements .dd-e-form {
+    margin-top: 22px;
+    gap: 14px;
   }
 
   .diet-diary-enhancements .dd-e-form__row {
     grid-template-columns: 1fr;
   }
 
-  .diet-diary-enhancements #festive-offer .dd-e-copy-pad {
-    padding: 36px 22px 44px;
+  .diet-diary-enhancements .dd-e-form .elementor-button,
+  .diet-diary-enhancements .dd-e-cta .elementor-button,
+  .diet-diary-enhancements .dd-e-xform .elementor-button {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
   }
 
-  .diet-diary-enhancements .elementor-col-25 {
-    width: 50%;
+  .diet-diary-enhancements .dd-e-contact-line {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    line-height: 1.6;
   }
 
-  .diet-diary-enhancements .dd-e-subhead {
-    font-size: 22px !important;
+  .diet-diary-enhancements .dd-e-contact-line a:not(:last-child)::after {
+    content: none;
+    margin: 0;
+  }
+
+  /* Soften entrance on small screens (full translateY 100% feels harsh) */
+  .diet-diary-enhancements .fadeInUp {
+    animation-duration: 0.9s;
+  }
+
+  @keyframes dd-fadeInUp-mobile {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 40px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .diet-diary-enhancements .animated.fadeInUp {
+    animation-name: dd-fadeInUp-mobile;
   }
 }
 
 @media (max-width: 480px) {
   .diet-diary-enhancements .elementor-col-25 {
     width: 100%;
+    padding: 10px 0;
+  }
+
+  .diet-diary-enhancements .dd-e-title {
+    font-size: 22px !important;
+  }
+
+  .diet-diary-enhancements .dd-e-sage .elementor-col-25 .dd-e-title {
+    font-size: 26px !important;
   }
 }
 
