@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import TrustStatsBanner from './TrustStatsBanner';
 import TransformationsBanner from './TransformationsBanner';
-import FestiveWellnessBanner from './FestiveWellnessBanner';
 import ClientReviewsSection from './ClientReviewsSection';
 import GooglePresenceCard from './GooglePresenceCard';
 
@@ -13,7 +12,6 @@ import GooglePresenceCard from './GooglePresenceCard';
  * so kit typography / buttons / spacing apply like the rest of the dump.
  */
 export default function HomeEnhancements({
-  includeFestive = true,
   hideLegacyTestimonials = false,
 }) {
   const [mountNode, setMountNode] = useState(null);
@@ -79,7 +77,6 @@ export default function HomeEnhancements({
       ) : null}
       <TrustStatsBanner />
       <TransformationsBanner />
-      {includeFestive ? <FestiveWellnessBanner /> : null}
       <ClientReviewsSection />
       <GooglePresenceCard />
     </div>,
